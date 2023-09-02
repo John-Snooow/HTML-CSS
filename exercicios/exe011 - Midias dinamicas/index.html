@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="tp-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias dinamicas</title>
+</head>
+<body>
+   <h1>Imagem dinamica</h1> 
+   <p>Tente abrir esse Site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.
+   </p>
+   <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem fléxivel">
+</picture>
+<p>Aqui ei Abri uma tag &lt;source:media:type&gt;Dentro dela tem parênteses que mudei de "min" para "max" com 1050px no <b>srcset</b> coloquei o nome da pasta que é "imagens/foto-m.png" Para ficar bem especificadoque quando o site abrir em uma tela menor este comando vai diminuir automaticamente a imagem máxima para a média. </p>
+<p>Acima Dessa tage o colocarei outra tag seguindo com mesmo parâmetro mudando as configuraçõesda média para a mínima.</p>
+<p>Lembrando que tem que abrir a tag Picture e dentro dela fazer essas outras tags, a tag que for menor fica sempre acima.</p>
+<h1>Reproduzindo audio</h1>
+<p>Vamos aprender a reproduzir audios em HTML5.</p>
+<audio preload="metadata" autoplay controls loop>
+    <source src="midia/Lawrence - TrackTribe.mp3" type="audio/mpeg">
+    <source src="midia/Lawrence - TrackTribe.ogg" type="audio/ogg">
+    <source src="midia/Lawrence - TrackTribe.wav" type="audio/wav">
+    <p>Infelizmente seu navegadornão consegue reproduzir o áudio <a href="midia/Lawrence - TrackTribe.mp3">Clique aqui para baixar o mp3</a>. </p>
+
+</audio>
+</body>
+</html>

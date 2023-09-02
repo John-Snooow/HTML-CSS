@@ -1,0 +1,183 @@
+@charset "UTF-8";
+/*OBS: Aqui as Fontes com URL do Google Fontes não estão funcionando é um problema que eu tenho que resolver depois.*/
+@import url('https://fonts.googleapis.com/css2? family= Bebas+Neue & family= Recursive:wght@900 & family= Work+Sans:ital,wght@0,100;0,200;0,300; 0,400;0,500;0,600;0,700;0,800;0,900;1,300 & display=swap');
+/*Caso d erro na fonte em URL você acrescenta os : na frente da barra que vai dar certo aqui embaixo*/
+@font-face {
+    font-family: 'Android';
+    src: url('../fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+/*Logo abaixo eu vou colocar a variável ":root" para facilitar e agilizar na escolha de cores desejadas
+*/
+
+:root { /*escala de cores monocromaticas para que elas fiquem salvas para melhor manuzeio*/
+    --cor0: #ebe5c5;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+    --font-padrão: arial, verdana, helvetica, sans-serif;
+    --fonte-destaque:  'Bebas Neue', 'Recursiva', 'Work Sans', sans-serif; /*não esta funcionado esta fonte nem aoutra "BEBAS" que foram copidadas do google fontes*/
+    --fonte-android: 'Android', 'cursive';
+
+}
+*{ /*Este se eleitor engloba todos os outros seletores para receber a mesma configuração (*)*/
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: var(--cor0);
+    font-family: var(--font-padrão);
+}
+a.externo::after { /*esta confg. serve para colocar o emog nos links*/
+    content: '\00A0\1F517';
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5)); /*Esta config. é para fazer um degradê no cabeçalho dando uma cor mais clean*/
+    min-height: 150px; /*Altura mínima do cabeçalho*/
+    text-align: center; /*Centralizar o texto do cabeçalho mas caso não dê certo que é o que acontece em alguns casos você tem que fazer esse mesmo procedimento individual ao "header > h1" e ao "header > p"*/
+   padding-top: 40px; /*Para dar um espaço de 40 Pixel em cima do cabeçalho onde fica o "h1"*/
+}
+header > h1 {
+    color: white;
+    font-size: 3em;
+    font-family: var(--fonte-destaque);
+    font-weight: normal;
+    margin-bottom: 20px; /*Coloquei para dar um espaço entre o "h1" e o "p"*/
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.445);/*para criar uma leve sombra no "h1"*/
+}   
+header > p{
+    color: white;
+    font-size: 1.2em; /*Tamanho da fonte em "em"*/
+    font-family: var(--font-padrão);
+    max-width: 600px; /*Para quando chegara 600 pixels de medida da página ele quebrar o texto do parâmetro*/ 
+    margin: auto; /*para centrtalizar o "p"*/
+    padding-right: 10px;/*Para dar uma margem de 10 Pixel e não ficar colado na lateral*/
+    padding-left: 10px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.445); /*sombra*/
+    margin-bottom: 20px;
+}
+nav{
+    background-color: var(--cor5);
+    padding: 10px;
+    box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.425);
+}
+nav > a{
+    color: var(--cor1);
+    padding: 10px;
+    border-radius: 5px; /*só para dar uma quebradinha na borda tornando ela arrendondada*/
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 1s; /*para fazer uma pequena transição quando eu passar o mouse por cima dos links do menu*/
+}
+nav > a:hover{
+    background-color: var(--cor3);
+    color: var(--cor5);
+}
+main {
+    background-color: white;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px; /*margem em baixo do "main" em baixo*/
+    padding: 20px; /* Serve para dar uma margem entre as imagens na borda branca juntamente com os textos e outros.*/
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.644); /*Aqui nós já vimos que é a sombra, mas lembre de não colocar as virgulas entre a confg. de cada Pixel*/
+    border-bottom-left-radius: 10px; /*Estas duas configurações foram feitas para que apenas as duas bordas de baixo sejam arredondadas então eu tive que fazer as duas individualmente
+    para que as de cima não fiquem arredondadas*/
+    border-bottom-right-radius: 10px;
+}
+main img {
+    width: 100%;
+}
+main img.pequena{
+    max-width: 350px; /*maxima largura da imagem, ela vai crescer so ate esse tamanho para nao ficar muito distorcida quando estiver em tela cheia*/
+    display: block; /*É utilizado quando a imagem é pequena e para ficar centralizada com auxílio do "margin: auto" que a tag de baixo*/
+    margin: auto; /*centraliza a imagem mas nesse caso teve que ter o auxilio  da tag de cima*/
+}
+div.video{
+    background-color: var(--cor5);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 59%; /*esta porcentagem pode ser variavel de acordo com o video, serve para tirar as bodar pretas de dentro do video se ele ficar com bordas pretas*/
+    position: relative;
+}
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+main strong {
+    color: var(--cor4);
+    font-weight: bold; /*estilo negrito*/    
+}
+main a {
+     text-decoration: none; /*para tirar a decoração dos links como sublinhado e a cor azulç*/
+     font-weight: bold;
+     background-color: var(--cor1); /*cor de fondo*/
+     padding: 2px 6px; /*preenchimento*/
+}
+main a:hover {
+    text-decoration: underline;
+    color: var(--cor4);
+
+}
+main h1 {
+    color: var(--cor5);
+    font-family: var(--fonte-android);
+    font-weight: normal; /*Aqui os h1 e o h2 do "main" e "header" estavam em negritos e com esta tag eu coloco ele em normal tirando assim os negritos*/
+    font-size: 1.8em;
+}
+main h2 {
+    font-family: var(--fonte-android);
+    color: var(--cor4);
+    font-size: 1.3em;
+    font-weight: normal;
+    background-image: linear-gradient(to right, var(--cor2), transparent);
+    text-indent: 8px;
+}
+main p { /*Neste caso eu não posso colocar "main > p" Porque se eu colocar assim eu vou estar incluindo todas as divis, article e outros...*/
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px; /*Recuo do parágrafo*/
+    font-size: 1em; /*tamanho da fonte*/
+    line-height: 2em; /*espaçamento entra linhas*/
+}
+aside {
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 10px; /*arredondamento dos cantos das bordas*/
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.384); /*sombra*/
+}
+aside > h3{
+    background-color: var(--cor4);
+    color: white;
+    padding: 10px;
+    margin:  -10px -10px 0px -10px ; /*esta configuração com "-10px" de magem foi colocada para que ela cresça 10px para fora isso vai fazer o "aside" perder o arredondamentos superiores por isso vamos fazer a config. de baixo.*/
+    border-radius: 10px 10px 0px 0px;
+}
+aside > ul{
+    list-style-type: '\2714\00A0\00A0'; /*(OBS: não é compativel com todo tipo de navegador)aqui eu fiz uma troca dos pontos da lita por um emog chamado "check" que achei na "emojipedia" copiei e colei o codigo de quatro numeros e coloquei uma barra invetida entes do codigo e o "\00A0" são os espaços que eu dei, dei dois espaços*/
+    list-style-position: inside; /* a posição da lista. Quando coloco "anside" nesta config. as bolinhas que estavam do lado de fora do "aside" Ficam para dentro.*/
+    columns: 2; /*para dividir a lista em duas colunas*/
+
+}
+footer{
+    background-color: var(--cor5);
+    color: white;
+    text-align: center; /*para centralizar a ultima frase*/
+    font-size: 0.8em;
+    padding: 5px;
+}
+footer a { /*Observe bem essas tags para que você consiga chegar até o destino de configuração*/
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+footer a:hover{
+    text-decoration: underline;
+    color: var(--cor1);
+}

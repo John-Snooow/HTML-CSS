@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: red; /*cor da conte do link*/
+            text-decoration: none; /*esta tag tira o suplinhado dos links que vem por padrão*/
+            font-weight: bold; /*a fonte fica em negrito*/
+        }
+        a:visited{
+            color: darkred; /*cor que fica quando o lonk ja foi visitado*/
+        }
+        a:hover{
+            color: black;/*quando eu passo o mose por cima do link ele fica da cor que eu estiver escolhido */
+            text-decoration: underline; /*aqui ele sublinha o link apenas quando eu colocar o mouse em cima dele*/
+        }
+        a:active{
+            color: yellow; /*aqui ele ativa uma cor quando eu clicar sobre o link*/
+        }
+        a::before{/*Significa que o símbolo vai estar antes do link*/
+            content: '⇒ '; 
+        }
+        a::after {/*Significa que o simolo vai estar depois dos links*/  
+            content:' ⇐' ; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://www.youtube.com/channel/UCZ9BqFBaqQ7V7oP-Sy3-lEw">Canal do YouTube</a></li>
+        <li><a href="https://www.twitch.tv/john_snooow" target="_blank">Canal na Twitch</a></li> <!-- observe que aqui eu coloque a tag "target" e celecionei o "blank", isso faz com que e link seja a berto em uma outra janela sem ter que feichar a atual-->
+        <li><a href="https://www.instagram.com/john_sno0w/">Meu Instagram</a></li>
+    </ul>
+</body>
+</html>

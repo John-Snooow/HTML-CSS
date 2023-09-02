@@ -1,0 +1,33 @@
+@charset "UTF8";
+/* tudo que em HTML é "id" em CSS é "#"  obs. O id é ultilizado só em um elemento por pagiga.
+    e tudo que em HTML é "class" em CSS é "." bos. e o class é ultilizado para cong de vairos topicos ao mesmo tempo.
+*/
+body{
+    background-color: #6fc4d183;
+    text-align: justify;
+}
+h1{
+    color: #015c28;
+}
+h1#principal{
+    text-align: center;
+    color: #3E6F6B;
+}
+h2{
+    color:#5D8679;
+}
+
+.basico {
+    color: #3E7C59;
+}
+.intermediario {
+    color: rgb(162, 165, 16);
+}
+.avancado {
+    color: brown;
+}
+/*aqui em baixo ja estamos ultilizando a segunda forma que é a configuração de clases, no site ja vai esta mostrando esta CONFG.*/
+.destaque{
+    background-color: rgba(255, 228, 196, 0.356);
+}
+/*Posso colocar mais de uma "class" em um elemento como exemplo o ".destaque" você pode observar no site que além da cor da fonte diferente ele está destacado*/

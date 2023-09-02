@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="tp-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixas</title>
+    <style>
+        h1{
+            /*esta é uma config de um modelo de uma caixa box-level*/
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+            /* Podemos simplificar todo esse trabalho colocando simplesmente o nome repetido e a configuração do sentido horário, exemplo: 
+            border: 10px solid darkgray;
+            
+            padding: 10px; Uma unica vez quando todos as medidas forem iguais
+                        uo
+            margin: 10px auto 10px auto; Quanto eu quiser que a direita e a esquerda fiquem centralizadas
+            */
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkgray;
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+            margin-top: 10px; /*margem a cima */
+            margin-right: 10px; /*margem a direita*/
+            margin-bottom: 10px; /*margem a baixo*/
+            margin-left: 10px; /* margem a esquerda*/
+
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: salmon;
+            
+            /*outline-width: 5px dashed salmon;*/
+        }
+        a{
+            /*esta é uma inline-level*/
+            border-width: 10px;
+            border-style: solid;
+            border-color: red ;
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemple de caixa box-level</h1>
+    <p>Parágrafo também são exemplos de boxe-level, mas os <a href="">links são exemplos de caixas online-level</a> vamos ver como tudo isso funciona</p>
+</body>
+</html>

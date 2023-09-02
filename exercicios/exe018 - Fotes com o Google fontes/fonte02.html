@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes externas</title>
+    <style>
+        @font-face {
+            /*OBS: aqui eu tentei fazer dois tipos de fonts mais não sei por qual motivo uma delas não funciona enquanto a outra esta no visual code juntas*/
+            font-family: 'amor';
+            /*"amor" é uma palavra que eu coloquei, aqui nesse espaço eu posso colocar o que eu quizer*/
+            src: url('fonts/calinastiya/Calinastiya demo.ttf') format('truetype');
+            font-family: 'love';
+            src: url('fonts/darling_3/Darling.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            
+           
+            /* 
+            Tipos de formatos()
+             - opetype (ott)
+             - truetype (otf)
+             - embedded-opentype
+             - truetype-att (Apple QAdvanced Typography)
+             - svg
+             */
+             
+        }
+        body {
+            font-family: 'love', Helvetica;
+            font-size: 3em;
+        }
+        h1{
+            font-family: 'amor', Times;
+            font-size: 3em;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Titulo</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem blanditiis quod vitae cupiditate accusantium expedita voluptatem nisi quidem aliquam quis ex nesciunt aspernatur quas, nostrum nam magni maxime repellendus nobis.</p>
+</body>
+</html>

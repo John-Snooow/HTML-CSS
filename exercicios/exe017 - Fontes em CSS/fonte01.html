@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            /*medidas abisolutas
+            cm, mm, in, px, pt, pc, 
+
+            medidas relativas
+            em, ex, rem, vw, %*/
+            
+            font-size: 1em;
+            /*Normalmente 16px é o padrão que os navegadores utilizam para HDML então tanto faz se eu colocar 16px ou não, a não ser que eu queira mudá-lo para outro tamanho
+            16px é igual a 1em*/
+            font-weight: bolder;
+            /*lighter normal bold bolder*/
+            font-style: italic;
+            text-decoration: underline;
+        }
+        h1 {
+            /*shorthand font
+            font-style -> fonte-weight -> font-size -> font-family
+            
+            font-family:'work sans', sans-serif;
+            font-weight: bolder
+            font-size: 3em
+            font-style: italic
+            todos tem que esta escrito em sequencia como esta a baixo*/
+            font: italic bold 3em 'work sans', sans-serif;
+        }
+        h2{
+            font: bold 2em 'work sans';
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore voluptatem recusandae dolore, similique neque obcaecati unde laborum qui dolorem officiis hic odio, repellat,Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere officia dolorum vero recusandae. Natus modi delectus quisquam iste facilis facere exercitationem nihil commodi, cumque deserunt velit ipsa, cupiditate quas ea. optio aliquid pariatur rem eaque atque nobis.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi dolor quis eligendi laudantium iste odio blanditiis culpa quam nam veritatis? Ad quas aspernatur assumenda praesentium ab nobis perspiciatis. Autem, repellat.</p>
+    <h2>Subtitulo do exercicio</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio incidunt dolorum quidem architecto? Doloremque quis dolorem magni tempora, aspernatur sed porro qui neque. Sed inventore dignissimos quas. Adipisci, distinctio quae!</p>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grouping tags</title>
+    <style>
+        body { /*O geral que estiver detro de body que não estiver uma cong. especifica vai ter as config. que estão aqui*/
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+        header { /*É a caixa que esta o paragrafo e os links*/
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            }
+        nav { /*é a caixa onde esta todos os links, config. das caixas*/
+            background-color: rgb(102, 102, 102);
+            padding: 3px;
+            box-shadow: 4px 4px 10px 0px black; /*esta conf. é a sombra, ela é padrão*/
+        }
+        nav > a { /*confg dos links*/
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin: 30px;
+        }
+        nav a:hover { /*quando eu passar o mouse por cima dos links ele vai sublinhar*/
+            text-decoration: underline;
+        }
+        main { /*É a caixa onde esta o paragrafo e as outras noticias e assuntos*/
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px 0px; /*arredondamento dos cantos da ciaxas.
+            OBS. posso tambem personalizar cada canto por ex: 10px 20px 10px 30px;*/
+            box-shadow: 3px 3px 16px 0px rgba(0, 0, 0, 0.479); /*sombra aqui eu fiz as cinfg. no Dev.Tools e copiei e colei aqui*/
+        }
+        article {
+            background-color: lightgray;
+            padding: 5px;
+        }
+        article > aside {
+            background-color: rgb(165, 165, 165);
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+        footer > p{ /*Esta configuração foi feita para que a margem do paragrafo fique colada lá no site*/
+            margin: 0px;
+        }
+        div#bola{
+            height: 100px; /*demarca o tamanho*/
+            width: 100px;
+            margin: 10px; /*margem para não ficar muito colada a esquerda e a cima da pagina*/
+            background-color: white; /*cor da bola*/
+            border-radius: 50%; /*bordas de 50% faz com que o quadrado se transforme em uma bola */
+            box-shadow: 2px 2px 7px black; /*sombra*/
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <q>Esportes Politica e Tecnologia
+            </q>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia earum soluta dolorem reprehenderit natus omnis doloribus velit voluptatum nemo. Obcaecati dignissimos tenetur, magni impedit aut assumenda tempora id porro? Quasi?</p>
+                <aside>
+                    <p>Artigo escrito por jose Silval</p>
+                </aside>
+            </article>
+        </section>
+
+    </main>
+    <footer>
+        <p>Desenvolvido pelo John Frank</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>

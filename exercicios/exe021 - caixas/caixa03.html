@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bordas personalizadas</title>
+    <style>
+        h1{
+            border: 5px solid black; /*bordas, caso navegador não seja compativel vc pode subistituir o "black" por "transparent"*/
+            padding: 10px; /*espaçamento*/
+            border-image-source: url('imagem.png'); /*config. para colocar a imagem na borda, OBS. lembre de colocar a imagem entre aspas*/
+            text-align: center;
+            border-image-slice: 27; /*para fatiar a imagem*/
+            border-image-repeat: repeat; /*muda o fatiamento a imagem*/
+            /*Você tambem pode simplificar todo esse trabaolho de bordas  aqui em cima colocando simplemesmenti isso:
+            "border-image: url('imagem.png') 27 repeat" vai simplificar os 3 topicos de bordas aqui em cima*/
+        }
+    </style>
+</head>
+<body> 
+    <h1>Teste de bordas</h1>
+</body>
+</html>
