@@ -57,7 +57,7 @@ header > p{
     padding-right: 10px;/*Para dar uma margem de 10 Pixel e não ficar colado na lateral*/
     padding-left: 10px;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.445); /*sombra*/
-    margin-bottom: 20px;
+    padding-bottom: 50px;
 }
 nav{
     background-color: var(--cor5);
