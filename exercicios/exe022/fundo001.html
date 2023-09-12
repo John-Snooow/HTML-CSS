@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de imagem de fundo</title>
+    <style>
+        body{
+            background-image: url(imagens/wallpaper001.jpg);
+        }
+        div.quadrado{
+            display: inline-block; /*para as caixas se posicionarem uma ao lado da outra*/
+            border: 2px solid black; /*grosura e cor da linha da porda da caixa*/
+            border-radius: 10px;
+            background-color: lightgrey; /*preenchimento de fundo*/
+            width: 300px; /*largura da caixa*/
+            height: 300px; /*altura da caixa*/
+        }
+        div#q1{
+            background-color: skyblue; /*cor de fundo*/
+        }
+        div#q2{
+            background-image: linear-gradient(to bottom, yellow, red); /*para faer um degrader*/
+        }
+        div#q3{
+            background-image: url('imagens/pattern003.png'); /*para colocar imagem de fundo na caixa*/
+        }
+    </style>
+</head>
+<body>
+    <div class="quadrado" id="q1">
+
+    </div>
+    <div class="quadrado" id="q2">
+
+    </div>
+    <div class="quadrado" id="q3">
+
+    </div>
+</body>
+</html>
