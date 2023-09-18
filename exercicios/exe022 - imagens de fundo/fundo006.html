@@ -3,19 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body{
-            height: 100vh;
+            /*height: 100vh;
             background-color: black;
             background-image: url(imagens/wallpaper002.jpg);
             background-position: center center; /*Para a imagem centralizar*/
-            background-repeat: no-repeat; /*Para não repetir a imagem*/
-            background-size: cover; /*Para fazer um preenchimento da imagem completando toda a tela mesmo que ela seja diminuída oumaximizada*/
+            /*background-repeat: no-repeat; /*Para não repetir a imagem*/
+            /*background-size: cover; /*Para fazer um preenchimento da imagem completando toda a tela mesmo que ela seja diminuída oumaximizada*/
+            /*background-attachment: fixed; /*para fixar a imagem de fundo quando o texto for rolado para cima ou para baixo*/
+
+            /*OBS: shorthand - backgrou / sequencia a ser ultilizado pra sipimpliuficar todo esse trabalho de cima e veja como ele vai ficar logo aqui em baixo.
+
+            color > image > position > repeat > [size] > attachment*/
+            
+            background: black url(imagens/wallpaper002.jpg) center center no-repeat fixed;
+            background-size: cover; /*O SIZE não está funcionando na sequência descrita acima por isso teremos que coloca o background-size separado*/
         }
         main{
             background-color: white;
-            width: 400px; /*largura*/
+            max-width: 700px; /*width é largura, max-width é para comprimir a largura quando o site for visto em telas menores como celulares*/
             padding: 10px; /*espaço interno*/
             margin: auto; /*para alinhar ao meio*/
             border: 1px solid darkblue; /*borda*/
@@ -26,10 +34,28 @@
 <body>
     <main>
         <h1>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. At provident ipsam neque rerum magni quidem facere cum quo blanditiis soluta, illo eaque cupiditate nobis harum illum incidunt quisquam ex earum.
-            </p>
+            Teste de imagem de fundo
         </h1>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. At provident ipsam neque rerum magni quidem facere cum quo blanditiis soluta, illo eaque cupiditate nobis harum illum incidunt quisquam ex earum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut accusamus alias fugiat voluptatem deserunt, eum deleniti reprehenderit labore aliquid optio rem quia accusantium sint, minus, veniam magni corrupti facilis? Magnam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur ad quaerat nihil molestiae sit et? Inventore aliquid, recusandae, iure sed laborum quos odio iusto nulla eveniet, eligendi veniam eum culpa.
+            </p>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. At provident ipsam neque rerum magni quidem facere cum quo blanditiis soluta, illo eaque cupiditate nobis harum illum incidunt quisquam ex earum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut accusamus alias fugiat voluptatem deserunt, eum deleniti reprehenderit labore aliquid optio rem quia accusantium sint, minus, veniam magni corrupti facilis? Magnam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur ad quaerat nihil molestiae sit et? Inventore aliquid, recusandae, iure sed laborum quos odio iusto nulla eveniet, eligendi veniam eum culpa.
+            </p>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. At provident ipsam neque rerum magni quidem facere cum quo blanditiis soluta, illo eaque cupiditate nobis harum illum incidunt quisquam ex earum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut accusamus alias fugiat voluptatem deserunt, eum deleniti reprehenderit labore aliquid optio rem quia accusantium sint, minus, veniam magni corrupti facilis? Magnam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur ad quaerat nihil molestiae sit et? Inventore aliquid, recusandae, iure sed laborum quos odio iusto nulla eveniet, eligendi veniam eum culpa.
+            </p>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. At provident ipsam neque rerum magni quidem facere cum quo blanditiis soluta, illo eaque cupiditate nobis harum illum incidunt quisquam ex earum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut accusamus alias fugiat voluptatem deserunt, eum deleniti reprehenderit labore aliquid optio rem quia accusantium sint, minus, veniam magni corrupti facilis? Magnam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur ad quaerat nihil molestiae sit et? Inventore aliquid, recusandae, iure sed laborum quos odio iusto nulla eveniet, eligendi veniam eum culpa.
+            </p>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. At provident ipsam neque rerum magni quidem facere cum quo blanditiis soluta, illo eaque cupiditate nobis harum illum incidunt quisquam ex earum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut accusamus alias fugiat voluptatem deserunt, eum deleniti reprehenderit labore aliquid optio rem quia accusantium sint, minus, veniam magni corrupti facilis? Magnam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur ad quaerat nihil molestiae sit et? Inventore aliquid, recusandae, iure sed laborum quos odio iusto nulla eveniet, eligendi veniam eum culpa.
+            </p>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. At provident ipsam neque rerum magni quidem facere cum quo blanditiis soluta, illo eaque cupiditate nobis harum illum incidunt quisquam ex earum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut accusamus alias fugiat voluptatem deserunt, eum deleniti reprehenderit labore aliquid optio rem quia accusantium sint, minus, veniam magni corrupti facilis? Magnam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur ad quaerat nihil molestiae sit et? Inventore aliquid, recusandae, iure sed laborum quos odio iusto nulla eveniet, eligendi veniam eum culpa.
+            </p>
+       
+       
     </main>
 </body>
 </html>
