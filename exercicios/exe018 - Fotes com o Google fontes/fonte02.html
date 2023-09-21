@@ -6,20 +6,22 @@
     <title>Fontes externas</title>
     <style>
         @font-face {
-            /*OBS: aqui eu tentei fazer dois tipos de fonts mais não sei por qual motivo uma delas não funciona enquanto a outra esta no visual code juntas*/
-            font-family: 'amor';
-            /*"amor" é uma palavra que eu coloquei, aqui nesse espaço eu posso colocar o que eu quizer*/
-            src: url('fonts/calinastiya/Calinastiya demo.ttf') format('truetype');
-            font-family: 'love';
-            src: url('fonts/darling_3/Darling.ttf') format('truetype');
+            
+            font-family: 'love larry';
+            src: url('fontes/love\ larry\ ttf.ttf') format('truetype');/*BAIXADA NO DAFONTE*/
+
+            font-family: 'Fuggles-Regular';
+            src: url('fontes/Fuggles-Regular.ttf') format('truetype');/*BAIXADA NO GOOGLE FONTE*/
+
             font-weight: normal;
             font-style: normal;
-            
+            /*AS FONTES BAIXADAS NO SITE "dafont" NÃO ESTÃO FUNCIONADO*/
+            /*JA AS FONTES BAIXADAS ATRAVEZ DO GOOGLE FONTES ESTÃO FUNCIONADO*/
            
             /* 
             Tipos de formatos()
              - opetype (ott)
-             - truetype (otf)
+             - truetype (ttf)
              - embedded-opentype
              - truetype-att (Apple QAdvanced Typography)
              - svg
@@ -27,11 +29,11 @@
              
         }
         body {
-            font-family: 'love', Helvetica;
+            font-family: 'Fuggles-Regular', Helvetica;
             font-size: 3em;
         }
         h1{
-            font-family: 'amor', Times;
+            font-family: 'lovelarry', Times, serif; 
             font-size: 3em;
             font-weight: normal;
         }
