@@ -1,0 +1,89 @@
+@charset "UTF-8"; /*mesma descrição que esta no "meta" do HTML bem a cima*/
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Sriracha&display=swap');
+
+:root{ /*para criar variaveis como fontes ou de escala de cores*/
+    --fonte1: verdana, 'Geneva', tahoma, sans-serif;
+    --fonte2: 'Passion One', 'cursive'; /*estas fontes (Passion One e Sriracha)foram tiradas 
+    direto do google fonts*/
+    --fonte3: 'Sriracha', 'cursiva';
+}
+
+*{ /*confg. para todos os elementos*/
+    margin: 0px; /*para que todos os elementos fiquem com 0 pixel e ficar tudo mais junto*/
+    padding: 0px;
+    font-size: 1em;
+}
+html, body {
+    min-height: 100%vh; /*tamanho minimo do htmle body vai ser 100% da viu port em altura*/ 
+    background-color: darkgray;
+    font-family: var(--fonte1);
+}
+header{ /*cabeçalho*/
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: var(--fonte3);
+}
+header > h1{ /*h1 do cabeçalho*/
+    padding-top: 50px; /*preenchimento a cima*/
+    font-variant: small-caps; /*As Fontes vão continuar todas maiúsculas mas as primeiras ficam
+    um pouco maiores*/
+    font-family: var(--fonte2);
+    font-size: 10vw; /*o tamanho da fonte vai se adapitando conforme o tamanho ta tela*/
+}header > p{
+    padding-bottom: 50px; /*para dar o mesmo preenchimeto que foi dado no padding-top no h1 e 
+    assim ficar bem centralizado em cima e baixo*/
+}
+header a, footer a{ /*para a confg. dos links do cabeçalho e do rodape*/
+    color: white;
+    text-decoration: none; /*tira os sublinhados dos lincks*/
+    font-weight: bolder; /*negrito no linck*/
+}
+header a:hover, footer a:hover{/*quando passar o mouse sobre o linck*/
+    text-decoration: underline; /*quando passar o mouse sobre o linck ele fica sublinhado*/
+}
+section{
+    padding-top: 10vh; /*preenchimento para todos os sections em vh*/
+    padding-bottom: 10vh;
+    line-height: 2em; /*espaçamento entre as frases pra facilitar a leitura*/
+    padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 3.5vw;
+}
+section > p{
+    padding-bottom: 2em;
+}
+section.normal{
+    background-color: white;
+    color: black;
+}
+section.imagem{
+    background-color: rgb(51, 51, 51);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.527); /*para fazer um sombra interna na caixa*/
+    background-size: cover; /*para a imagem ficar uma pouco menor e preencher todo o campo da caixa*/
+    background-attachment: fixed; /*para deixar a iagem de fundo fixada para quando rolar a pagina
+    para baixo ou par acima ela não se mover*/
+}
+section#img01{ /*para colocar as imagens nas seções*/
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;
+}
+section#img02{
+    background-image: url(imagens/background002.jpg);
+}
+section.imagem > p{ /*fizemos isto para criar uma caixa dentro da imagem*/
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.308);
+    text-shadow: 1px 1px 0px black; /*para a cor da sombra das fontes dentro da caixa*/
+}
+footer{
+    background-color: black;/*corde fundo*/
+    color: white;/*cor do texto*/
+    text-align: center;
+    padding: 10px;/*preenchimento*/
+    font-size: 0.8em;
+}
