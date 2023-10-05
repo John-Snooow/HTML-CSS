@@ -9,15 +9,21 @@
             font-family: Arial, Helvetica, sans-serif;
         }
         table{
-            width: 500px;
+            width: 500px; /*aqui a tabela esta com 500px mais la em baixo no "th" eu coloque um style com 50px de largura então aqui ele ficou só com 450px*/
             border-collapse: collapse; /*juntar todas as bordas da tabela*/
         }
         td, th{
             border: 1px solid black;
             padding: 10px;
         }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
         thead, tfoot{
-            background-color: gray;
+            background-color: rgb(77, 76, 76);
             color: white;
         }
          td.num{
@@ -29,6 +35,7 @@
     <h1>Uso de tabelas grandes</h1>
     <!-- ANATOMIA PARA TABELAS GRANDES
     TABLE
+        CAPTION "legenda da tabela"
         THEAR "cabeçalho"
             TR,TD,TH
         TBODY "corpo"
@@ -37,16 +44,17 @@
             TR,TD,TH
     -->
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
-                <th>% da pop. total</th>
+                <th scope="col">Estado</th> <!-- "th"para colocar algum conteudo do tipo titulo como o "h1"-->
+                <th scope="col" style="width: 50px;">População</th> <!-- "scope="col"" para Deixar claro para o HTML que se trata de um titulo da coluna-->
+                <th scope="col" style="width: 50px;">% da pop. total</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td> São Paulo</td>
+                <td> São Paulo</td> 
                 <td class="num">44 420 459</td>
                 <td>21,88%</td>
             </tr>
@@ -57,7 +65,7 @@
             </tr>
             <tr>
                 <td> Rio de Janeiro</td>
-                <td class="num">16 054 524</td>
+                <td class="num">16 054 524</td><!-- "td" para colocar algum dado (informações)-->
                 <td>7,91%</td>
             </tr>
             <tr>
@@ -118,7 +126,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes do Brasil</th>
+                <th scope="row">Total de Habitantes do Brasil</th> <!-- aqui diferente do "scope="col"" não indica titulo da coluna ate porque esta em baixo, mas sim a linha da coluna não afeta nada no visual mais fica melhor quando alguem pesquisar por dados desse tipo-->
                 <th class="num"><strong>203 062 512</strong></th>
                 <th>+6,45%</th>
             </tr>
