@@ -26,6 +26,10 @@
             background-color: rgb(77, 76, 76);
             color: white;
         }
+        tbody > tr:nth-child(2n){ /*para fafer o efeito zebrado em listas muito grandes "tr:nth-child(2n)" o "2n" é para pular uma linha sim outra não que sera pintada na cor celecionada. Mas porde ser subistiido por (odd) que siginifica impa sera pintado somente as linhas impares ou (even) que é par. capitulo 21 aula 06*/
+            background-color: lightgray;
+            color: white;
+        }
          td.num{
             text-align: right;
          }
