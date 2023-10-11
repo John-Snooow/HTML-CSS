@@ -30,14 +30,14 @@
         </caption>
         <thead>
             <tr>
-                <th>Grupos</th>
-                <th>Nomes</th>
-                <th colspan="3">Filmes</th>
+                <th scope="col">Grupos</th>
+                <th scope="col">Nomes</th>
+                <th colspan="3" scope="colgroup">Filmes</th> <!--quando temos um (scope="colgroup") temos um grupo de colunas em scope-->
             </tr>
         </thead>
         <tbody>
             <tr>
-                <th rowspan="3">Mulheres</th> <!--Só existe escopo em "th"-->
+                <th rowspan="3" scope="rowgroup">Mulheres</th> <!--todo "th" tem um "scope"-->
                 <td>Ana Maria Santos</td>
                 <td>Alien</td>
                 <td>Rambo</td>
@@ -56,7 +56,7 @@
                 <td>Big Hero</td>
             </tr>
             <tr>
-                <th rowspan="3">Homens</th>
+                <th rowspan="3" scope="rowgroup">Homens</th> <!--"scope="rowgroup" porque estou ultilizando em uma grupo-->
                 <td>Bruno Mendonça</td>
                 <td>Intocáveis</td>
                 <td>Amnesia</td>
@@ -75,6 +75,10 @@
                 <td>Toy Story</td>
             </tr>
         </tbody>
+        <tfoot>
+            <th colspan="4" scope="row">Total</th> <!--Aqui o scope esta em "row" (linha), Embora ela tenha expandido 4 casas ela se refere apenas há uma linha e não há um grupo-->
+            <td>1000</td>
+        </tfoot>
     </table>
 </body>
 </html>
