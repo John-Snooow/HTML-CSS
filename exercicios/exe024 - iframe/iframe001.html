@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>estudos de iframe</title>
+    <style>
+        iframe{
+            width: 400px;
+            height: 400px;
+            /*As configurações ditas no CSS serão sempre soberanas elas são as que vão prevalecer caso tenham alguma mudança no HTML*/
+        }
+    </style>
+</head>
+<body>
+    <!-- "iframe" = quadros em linhas-->
+    <h1>Testando o suo de uma iframe</h1>
+    <p>
+        Acessando o repositorio 
+            <!--tamanho padrão do iframe 300x150-->
+      <iframe src="https://github.com/gustavoguanabara/html-css/tree/master/aulas-pdf" frameborder="0" scolling="no"> <!--scolling="no" para não deixar fazer a rolagem-->
+         <a href="https://github.com/gustavoguanabara/html-css/tree/master/aulas-pdf" target="_blank"> Guanabara</a>
+      </iframe> <!--Caso o iframe não dê certo era para aparecer o link mais neste caso também não deu certo-->
+        para aprender HTML e CSS. 
+    </p>
+    <!--iframe serve para colocar uma nimi caixa de Exibição de um site para você clicar ao invés de clicar em um link no entanto há vários sites com proteção para iframe sendo assim uma tag quase inútil-->
+    
+    <p>
+         O site da 
+         
+         <iframe src="https://www.netflix.com/br/" frameborder="0" height="500px" width="500">
+            <a href="https://www.netflix.com/br/">netflix</a>
+         </iframe> <!--aqui nehuma das tags funcionou mais na tada que foi feito a video aula Estavam funcionado-->
+         tambem é muito legal.
+    </p>
+    <!-- mas calma tem uma maneira de concertar isso em alguns casos, mas só na prossima aula-->
+</body>
+</html>
