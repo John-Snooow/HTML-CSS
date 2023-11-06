@@ -12,12 +12,25 @@
 </head>
 <body><!--formulario baseico-->
     <h1>Meu primerio formulario</h1>
-    <form action="cadatro.php" autocomplete="off"> <!--O "cadastro.php" significa que vai ser implementado uma outra linguagem no "action" e assim poderar ser armazenado os dados, e o "autocomplete" é para não deixar salvou os nomes quando for digitado nos campos -->
-        <p><label for="inome">Nome:</label> <!--aqui no "label" eu coloquel o "id" que fica no "input" obs: eu coloquei um "i" na frente do nome e sobrenome para diferenciar do nome e sobrenome que estar dentro de "name""-->
-            <input type="text" name="nome" id="inome"></p><!--"name"= mais ultio para html e php e o "id"= mais ultilizado para javascript -->
-        <p><label for="isobrenome">Sobrenome:</label> <!--para fazer formularios sempre se faz "label" com o "input", um sempre relacionado ao outro-->
-            <input type="text" name="sobrenome" id="isobrenome"></p>
-        <p><input type="submit" value="Enviar"></p>
+    <form action="cadatro.php" method="post" autocomplete="off"> 
+        <!--O "cadastro.php" significa que vai ser implementado uma outra linguagem no "action" e assim poderar ser armazenado os dados, e o "autocomplete" é para não deixar salvou os nomes quando for digitado nos campos E o (method="post") serve para quando colocar seus dados ele não mostrar na URL, não significa que é seguro, as informações ficaram no DevTools-->
+        <p>
+            <label for="inome">Nome:</label> 
+            <!--aqui no "label" eu coloquel o "id" que fica no "input" obs: eu coloquei um "i" na frente do nome e sobrenome para diferenciar do nome e sobrenome que estar dentro de "name""-->
+            <input type="text" name="nome" id="inome">
+        </p>
+            <!--"name"= mais ultio para html e php e o "id"= mais ultilizado para javascript -->
+        <p>
+            <label for="isobrenome">Sobrenome:</label> 
+            <!--para fazer formularios sempre se faz "label" com o "input", um sempre relacionado ao outro-->
+            <input type="text" name="sobrenome" id="isobrenome">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+        </p>
     </form>
+    <!-- em que momento eu uso GET e POST em "method" Get quando os dados não forem muito senciveis tip(senhas, numero de cartão de credito, CPF, RG entre outros) quando vc envia dados por GET só pode iviar eta 3000 bits se ultrapassar os 3000 o GET não é o mais adequado -->
+
+    <!--quando eu deve usar o POST= quando os dados forem senciveis (numeros ou fotos pessoais) e trabalhar com HTTPS quer é uma liguagem de programação para Criptografar os dados, se os dados tiverem mais de 3000 bits se quiser fazer envios de arquivos-->
 </body>
 </html>
