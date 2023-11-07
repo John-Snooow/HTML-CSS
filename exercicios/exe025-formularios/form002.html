@@ -7,24 +7,25 @@
 </head>
 <body>
     <h1>Teste de formulario</h1>
-    <form action="cadastros.php" method="POST" autocomplete="on"></form>
+    <form action="cadastros.php" method="POST" autocomplete="on">
+        <p>
+         <label for="iusu">Usuario:</label>
+            <input type="text" name="usu" id="iusu" required minlength="4" maxlength="15" placeholder="Nome do Usuario" autocomplete="username">
+            <!--"placeholder" para ficar a amostra uma dica-->
+            <!-- "required" para ficar obrigatorio o preenchimento dos campos-->
+            <!--"maxlength" para maximo de caracteris-->
+            <!--"autocomplete="username" para quando clicar na caixa sugerir seu ulto nome digitado-->
+        </p>
     <p>
-        <label for="iusu">Usuario:</label>
-        <input type="text" name="usu" id="iusu" required minlength="4" maxlength="15" placeholder="Nome do Usuario" autocomplete="username">
-        <!--"placeholder" para ficar a amostra uma dica-->
-        <!-- "required" para ficar obrigatorio o preenchimento dos campos-->
-        <!--"maxlength" para maximo de caracteris-->
-        <!--"autocomplete="username" para quando clicar na caixa sugerir seu ulto nome digitado-->
-    </p>
-    <p>
-        <label for="isen">Senha:</label>
-        <input type="password" name="sen" id="isen" required minlength="6" placeholder="Coloque sua senha aqui" autocomplete="current-password">
-        <!--"minlength" para colocar no minomo de caracteris escolhido-->
-        <!--"autocomplete="current-password" para quando for colocar a senha ele ficar salva no navegador-->
-    </p>
-    <p>
-       <input type="submit" value="Enviar"> 
-       <input type="reset" value="Limpar">
-    </p>
+            <label for="isen">Senha:</label>
+           <input type="password" name="sen" id="isen" required minlength="6" placeholder="Coloque sua senha aqui" autocomplete="current-password">
+            <!--"minlength" para colocar no minomo de caracteris escolhido-->
+           <!--"autocomplete="current-password" para quando for colocar a senha ele ficar salva no navegador-->
+        </p>
+        <p>
+           <input type="submit" value="Enviar"> 
+           <input type="reset" value="Limpar">
+        </p>
+    </form>
 </body>
 </html>
