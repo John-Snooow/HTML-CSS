@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="tp-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Formulário para esporte e sexo</h1>
+    <form action="cadastros.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="isxmas" checked> <label for="isxmas">Masculino</label> <br>
+            <input type="radio" name="sexo" id="isxfem"> <label for="isxfem">Feminino</label> <br>
+            <!--OBS: aqui em "name" eu coloquei os dois com mesmo nome(sexo) para que seja marcado uma opção ou a outra não Deixando as duas marcadas-->
+        </fieldset>
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+            <input type="checkbox" name="esbas" id="iesbas"> <label for="iesbas">Basquete</label> <br> 
+            <!--"checkbox" para criar Caixinhas de marcação-->
+            <input type="checkbox" name="esfut" id="iesfut"> <label for="iesfut">Futebol</label> <br>
+            <!--"label" neste caso para vincilar a caixinha com os nomes para quando clicar ate nos nemos a caixinha ficar marcada-->
+            <input type="checkbox" name="esnat" id="iesnat" checked> <label for="iesnat">Natação</label> <br>
+            <!--Observe que nesta opção de natação e na escolha do sexo masculino vai estar marcado automaticamente quando você abrir o navegadora opção "checked" apos o "id" é para isso, ficara assim por padão mais podera ser alterada pelo ususario-->
+            <input type="checkbox" name="esten" id="iesten"> <label for="iesten">Tênis</label> <br>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
