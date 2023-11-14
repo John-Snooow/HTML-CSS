@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+   <h1>Exemplo de Formularios (calculando ano de idade)</h1> 
+   <form action="cadastros.php" method="get">
+        <p>
+            <label for="iano">Em que ano você nasceu?</label>
+            <input type="number" name="ano" id="iano" min="1900" max="2023" oninput="calcIdade()">
+            <!--"oninput="calcIdade()" para pegar informação do ano digitado e faze o calculo com o ano atual usando o codigo de script de baixo-->
+        </p>
+        <p>
+            <label for="iidade">Sua idade neste ano é:</label>
+            <output id="iidade">0</output>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+   </form>
+   <!-- fora da tag "form" vamos fazer um codigo de javascript-->
+   <script>
+        function calcIdade(){
+            let atual = new Date().getFullYear()
+            iidade.innerHTML = Number(atual) - Number(iano.value)
+        }
+   </script>
+   <!-- o script vai faze a soma-->
+</body>
+</html>
