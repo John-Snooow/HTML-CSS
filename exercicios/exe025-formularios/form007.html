@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Exemplo de Formularios</h1>
+    <form action="cadastros.php" method="post" autocomplete="">
+        <p>
+            <label for="iest">Estado</label>
+            <select name="estado" id="iest">
+                <option value="" selected>---- ESCOLHA ----</option>
+                <optgroup label="Região Sudeste">
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP"> São Paulo</option>
+                </optgroup>
+                <!--aqui em "optgroup" para fazer agrupamento dos estado eu ultilizei um "label" que é uma atribulto e não uma elemento como é o caso do "label" que fica dentro do "form"-->
+
+                <optgroup label="Região Nordeste">
+                    <option value="MA">Maranhão</option>
+                    <option value="PI">Píaui</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                </optgroup>
+            </select> 
+            <!--uma das pocas Situações onde não se utiliza "input" como na escolha de estados utiliza-se "select" tendo tag de fechamento, tem que colocar as opções de uma a uma e em ordem pois este comando não se organiza automaticamente-->
+        </p>
+        <p>
+            <label for="iprof">Profição</label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                 <!--aqui em "datalist" tive que digitar todo o codigo pois não aparece, serve para fazer uma lita de profições e o "id" é para pegar a "list" é para pegar o codigo lstprof que esta em cima e assim aparecer uma setinha no site que ao passar o mouse  vai aparecer as opções-->
+                <option>Adiministrador</option>
+                <option>Contabilista</option>
+                <option>Desenvolvedor</option>
+                <option>Professor</option>
+                <option>Autonomo</option>
+                <!--aqui em "option" eu apaguei os "values"-->
+            </datalist>
+        </p>
+        <!--neste exercicio temos dois tipos de litas, a diferença entre elas é que a lista de cima eu posso somente selecionar o estado mas não posso digitar qual eu quero, ja na lista de baixo eu posso digitar a profição que eu quiser ate as que não estiverem na lista e na poxima vez que o mesmo usuario visitar o site quando ele passar o mouse sobre a lista de profição vai aparecer a opção que ele colocou anteriormente mesmo que ela não estivesse na lista-->
+        <p>
+            <label for="imsg">Mensagem:</label> <br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        </p>
+        <!--aqui um outro caso onde não se ultiliza "input"-->
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
