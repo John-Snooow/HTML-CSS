@@ -1,2 +1,21 @@
 @charset "UTF-8";
 /*ESTILO PARA IMPRESSORA*/
+
+*{
+    margin: 10px;
+    padding: 10px;
+}
+html{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+ menu{
+    display: none; /*para quando eu for imprimir o menu ira desaparecer na pagina de impreção*/
+ }
+ article{
+    width: 100%;
+ }
+ article::after{ /*que quer dizer: depois do artigo*/
+    content: 'Esse artigo foi Impresso por John Frank aprendiz de programador nas aulas do curso em vídeo do professor Gustavo Guanabara...';
+ }
