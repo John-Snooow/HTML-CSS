@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+ /*Declarações gerais*/
+ @media all{
+    *{
+        margin: 0px;
+        padding: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    html, body{
+        width: 100vw;
+        height: 100vh;
+        background-color: #233eff;
+        background-size: contain; /*para a imagem se encaichar enteira no site*/
+        background-repeat: no-repeat; /*para não repetir a imagem*/
+    }
+    h1{
+        color: white;
+        text-shadow: 2px 2px 0px #14238f;
+        padding: 10px;
+    }
+ }
+
+/*Declarações retrato*/
+@media screen and (orientation: portrait){
+    body{
+        background-image: url(../imagens/cev-portrait.jpg);
+        /*aqui eu coloquei dentro do parenteses do URL primeiro dois pontos e um barra para voltar duas pastas e chegar ate as imagens ja que elas estão em uma outra pasta*/
+        background-position: center bottom; /*para a imagem se posicionar no centro  e em baixo e assim ficando centralizada*/
+    }
+}
+ /*Declarações paisagem*/
+ @media screen and (orientation: landscape){
+    body{
+        background-image: url(../imagens/cev-landscape.jpg);
+        /*aqui eu coloquei dentro do parenteses do URL primeiro dois pontos e um barra para voltar duas pastas e chegar ate as imagens ja que elas estão em uma outra pasta*/
+        background-position: left bottom; /*aqui foi preciso fazer esta config. para a imagem se posicionar na dereita e em baixo*/
+    }
+}
