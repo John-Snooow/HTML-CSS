@@ -1,3 +1,8 @@
 @charset "UTF-8";
 
 /*aparelho deitado (landscape)*/
+body{
+    background-image: url(../imagens/cev-landscape.jpg);
+    /*aqui eu coloquei dentro do parenteses do URL primeiro dois pontos e um barra para voltar duas pastas e chegar ate as imagens ja que elas estão em uma outra pasta*/
+    background-position: left bottom; /*aqui foi preciso fazer esta config. para a imagem se posicionar na dereita e em baixo*/
+}
