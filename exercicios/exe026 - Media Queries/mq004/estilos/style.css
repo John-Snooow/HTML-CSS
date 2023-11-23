@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+/*Versão Mobile First*/
+
+ *{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+ }
+html{
+    width: 100vw;
+    height: 100vh;
+ }
+ body{
+    background: black url(../imagens/back-phone.jpg) no-repeat;
+    background-size: cover; /*para a imagem preencher o body*/
+    background-position: center center; /*para a imagem centralizar no body  Fazendo com que dê para ver o centro da imagem quando o site estiver encolhido ou aumentar o tamanho do site em tela cheia*/
+ }
+ main {
+    background-color: rgba(255, 255, 255, 0.733);
+    width: 400px;
+    margin: auto;
+    margin-top: 20px; /*para dar um Espaço em cima. OBS: aqui para funcionar eu tive que colocar esta config. de baixo de "margin" obedecendo a ierarquia de montagem do site*/
+    border-radius: 10px;
+    padding: 10px;
+ }
+ h1{
+    text-align: center;
+    color: white;
+    font-size: 2em;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.521);
+ }
+ img{
+    display: block;
+    margin: auto;
+ }
+
+ img#phone{ display: block;} /*aqui eu Puxei pelo ID da imagem para que somente o icone do telefone aparecesse e os outros displayers ficassem ocultos*/
+ img#tablet{ display: none;}
+ img#print{ display: none;}
+ img#pc{display: none;}
+ img#tv{ display: none;}
