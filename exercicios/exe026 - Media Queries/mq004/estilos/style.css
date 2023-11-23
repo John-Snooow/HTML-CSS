@@ -37,8 +37,9 @@ html{
     margin: auto;
  }
 
- img#phone{ display: block;} /*aqui eu Puxei pelo ID da imagem para que somente o icone do telefone aparecesse e os outros displayers ficassem ocultos*/
+ img#phone{ display: block;}
  img#tablet{ display: none;}
  img#print{ display: none;}
  img#pc{display: none;}
  img#tv{ display: none;}
+  /*aqui eu Puxei pelo ID da imagem para que somente o icone do telefone aparecesse e os outros displayers ficassem ocultos*/
