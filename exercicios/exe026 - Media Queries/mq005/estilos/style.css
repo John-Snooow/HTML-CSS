@@ -16,8 +16,20 @@
         padding: 10px;
         text-align: center;
     }
-    menu{
+    span#burguer{/*esta confg é para os links que peguei no google fontes*/
+        background-color: rgb(46, 46, 46);
+        color: white;
         display: block;
+        text-align: center;
+        padding: 10px;
+        cursor: pointer;/*para quando eu passar o mouse em cima do menu ele se tornar uma mãozinha*/
+    }
+    span#burguer:hover{/*para quando eu passar o mouse ele mudar de cor*/
+        background-color: white;
+        color: black;
+    }
+    menu{
+        display: none; /*para o menu desaparecer e só aparecerá quando eu clicar nos 3 tracinhos, e essa parte precisara de um poco de java script*/
     }
     menu > ul{
         list-style-type: none;

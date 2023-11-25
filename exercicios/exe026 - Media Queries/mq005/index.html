@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Media Query</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"  rel="stylesheet">
+     <!--aqui eu peguei este link no google fontes na parte de icones, escolho o icone e para ver a opcão de CSS eu clico no link do Icone font, vou ser redirecionado para outra aba e la vai as CSS-->
     <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
     <header>
         <h1>Meu site</h1>
-        <menu>
+        <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span> 
+        <!--este codigo eu pegeui na mesma pagina que o codigo link a cima em "Como usar os ícones em HTML" e entro dele coloquei a palavra menu-->
+        <menu id="itens">
             <ul>
                 <li><a href="#">opição 1</a></li>
                 <li><a href="#">opição 2</a></li>
@@ -29,5 +33,14 @@
              <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime quas iste, facere voluptatem commodi quae fugit qui distinctio libero eligendi. Debitis dolorum expedita non voluptatum eius iusto dicta in ullam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus porro autem dolore obcaecati itaque odit vero. Minus rem, cumque non ducimus odio esse commodi velit voluptate sint officiis ratione? Ut.</p>
         </article>
     </main>
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
