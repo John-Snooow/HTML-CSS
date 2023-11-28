@@ -6,9 +6,12 @@
     <title>Media Query</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"  rel="stylesheet">
      <!--aqui eu peguei este link no google fontes na parte de icones, escolho o icone e para ver a opcão de CSS eu clico no link do Icone font, vou ser redirecionado para outra aba e la vai as CSS-->
-    <link rel="stylesheet" href="estilos/style.css">
+
+    <link rel="stylesheet" href="estilos/style.css"><!--estilo generico-->
+
+    <link rel="stylesheet" href="estilo/media-query.css"><!--e este link para as outras medias querys-->
 </head>
-<body>
+<body onresize="mudouTamanho()"><!--mais um cod. javajs para quando eu mudar o tamanho do site-->
     <header>
         <h1>Meu site</h1>
         <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span> 
@@ -34,6 +37,13 @@
         </article>
     </main>
     <script>
+        function mudouTamanho(){ //este cod. é para forçar a ixibição do menu
+            if (window.innerWidth >= 768){
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
         function clickMenu() {
             if (itens.style.display == 'block') {
                 itens.style.display = 'none'

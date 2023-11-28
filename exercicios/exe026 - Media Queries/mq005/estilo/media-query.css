@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+/*Typical Device Breakpoints
+----------------------------
+
+Pequenas telas: ate 600px
+Celular: de 600px ate 768px
+tablet: de 768px ate 992px
+desktop: de 992px ate 1200px
+Grandes telas: acima de 1200px
+*/
+@media screen and (min-width: 768px){/*para telas um pouco maiores como tablets*/
+    i#burguer{
+        display: none;/*para o icone burguer desaparecer quando eu almentar a tela*/
+    }
+    menu {
+        display: block;/*quando eu almentar a tela vai desaparecer o incone a aparecer o menu*/
+    }
+    menu > ul > li {
+        display: inline-block; /*para as opções do menu ficarem uma do lado da outra*/
+
+    }
+    main{
+        width: 768px;/*para o main ter um largura fixa, ele vai crescer ate a tela ficar com 768px depois disso ele para de crescer */
+    }
+}
