@@ -10,7 +10,7 @@ desktop: de 992px ate 1200px
 Grandes telas: acima de 1200px
 */
 @media screen and (min-width: 768px){/*para telas um pouco maiores como tablets*/
-    i#burguer{
+    span#burguer{
         display: none;/*para o icone burguer desaparecer quando eu almentar a tela*/
     }
     menu {
