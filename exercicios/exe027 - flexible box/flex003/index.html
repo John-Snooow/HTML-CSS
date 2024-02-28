@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible box</title>
+    <style>
+        /*isto para que os elementos da pagina se torne responsiva e se adapte aos tamanhos, ainda tem muito caminho pela frente*/
+        div.conteiner{
+            background-color: lightsalmon;
+
+            display: flex;/*para adapitar e colocar um do lado do outro ficando flexivel*/
+            flex-flow: row wrap-reverse;/*organizando as quebra de linhas em um só codigo*/
+
+            /*flex-direction: row; /*flexible-box padrão mas posso colocar o reverse*/
+            /*flex-wrap: wrap-reverse;/*aqui vou determinar como eu quero que faça a quebra, aqui tambem esta padrão, para alterar "ctrl+espeço" teste todas as quebras*/
+        }
+        div.item{
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            flex: auto;/*quando eu tenho o flex-flow no pai e coloco o flex auto aqui nop filho os campos tornam a se preencher altomaticamento ficando somente as cores azuis*/
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item">Exmplo de bloco A</div>
+        <div class="item">Exmplo de bloco B</div>
+        <div class="item">Exmplo de bloco C</div>
+        <div class="item">Exmplo de bloco D</div>
+        <div class="item">Exmplo de bloco E</div>
+        <div class="item">Exmplo de bloco F</div>
+        <div class="item">Exmplo de bloco G</div>
+    </div>
+</body>
+</html>
