@@ -8,8 +8,9 @@
         /*isto para que os elementos da pagina se torne responsiva e se adapte aos tamanhos, ainda tem muito caminho pela frente*/
         div.conteiner{
             background-color: lightsalmon;
-
+            /*PAIS*/
             display: flex;/*para adapitar e colocar um do lado do outro ficando flexivel*/
+            flex-flow: row wrap;
         }
         div.item{
             background-color: lightblue;
@@ -17,17 +18,40 @@
             text-align: center;
             padding: 20px;
         }
+        /*FILHOS*/
+        /*Estas configs abaixo é para exemplificar o exercício prescrito Dá anatomia dos itens flexbox. coloquei com os valores vairados para ele colocar nas ordens que eu ditei ultilizando o "order" */
+        div#i1{
+            order: 0;
+        }
+        div#i2{
+            order: -2;
+        }
+        div#i3{
+            order: 4;
+        }
+        div#i4{
+            order: 8;
+        }
+        div#i5{
+            order: 2;
+        }
+        div#i6{
+            order: 0;/*aqui no id6 temos o F que ficara em quarto pois tem o mesmo valor que o id1, o id1 vai entra primeiro porque estava em primeiro no HTML*/
+        }
+        div#i7{
+            order: -4;/*para cada um deles ficar na ordem que eu escrevi aqui em cada um deles*/
+        }
     </style>
 </head>
 <body>
     <div class="conteiner">
-        <div class="item">A</div>
-        <div class="item">B</div>
-        <div class="item">C</div>
-        <div class="item">D</div>
-        <div class="item">E</div>
-        <div class="item">F</div>
-        <div class="item">G</div>
+        <div class="item" id="i1">A</div>
+        <div class="item" id="i2">B</div>
+        <div class="item" id="i3">C</div>
+        <div class="item" id="i4">D</div>
+        <div class="item" id="i5">E</div>
+        <div class="item" id="i6">F</div>
+        <div class="item" id="i7">G</div>
     </div>
 </body>
 </html>
